@@ -1,0 +1,17 @@
+'use client';
+
+import { QueryClient } from '@tanstack/react-query';
+
+
+export const queryClient = new QueryClient({
+  defaultOptions: {
+    
+    mutations: {
+
+    },
+    queries: {
+      staleTime: 30 * 1000,
+
+    },
+  },
+});
